@@ -1,0 +1,13 @@
+<h1>Books</h1>
+
+<h2>New book</h2>
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <h3>Title</h3>
+  <%= f.text_field :title %>
+  <h3>Body</h3>
+  <%= f.text_area :body %>
+  <!--投稿-->
+  <%= f.submit 'Create Book' %>
+<% end %>
+
+
